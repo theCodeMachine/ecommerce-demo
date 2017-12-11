@@ -14,22 +14,17 @@ new Router()
 
 Backbone.history.start()
 
-const Product = Backbone.Model.extend({
-    Name: function () {},
-    Description: function () {},
-    Price: function () {},
-    Colors: function () {}
+var Product = Backbone.Model.extend({
+    default:function(){
+        return {
+            "name":"INC International Concepts",
+            "desc":"Bell-Sleeve Dress, Created for Macy's"
+        }
+    }
 })
 
 const Products = Backbone.Collections.extend({
     model: Product
-});
-
-const Order = Backbone.Model.extend({
-    products:function(){
-        
-    },
-    shipping:function(){
-        
-    }
 })
+
+const Order = Backbone.Model.extend({})
