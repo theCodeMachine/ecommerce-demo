@@ -9,22 +9,9 @@ import '../styles/index.css'
 
 import Router from './router'
 
+
+
 // eslint-disable-next-line
-new Router()
+new Router();
 
 Backbone.history.start()
-
-var Product = Backbone.Model.extend({
-    default:function(){
-        return {
-            "name":"INC International Concepts",
-            "desc":"Bell-Sleeve Dress, Created for Macy's"
-        }
-    }
-})
-
-const Products = Backbone.Collections.extend({
-    model: Product
-})
-
-const Order = Backbone.Model.extend({})
