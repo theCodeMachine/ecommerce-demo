@@ -1,0 +1,20 @@
+:root {
+  --background-color: #EEEEEE;
+}
+
+.homepage {
+  text-align: left;
+
+  &__header {
+    background-color: var(--background-color);
+    padding: 10px;
+
+    >img {
+      width: 200px;
+    }
+  }
+
+  &__intro {
+    font-size: large;
+  }
+}
