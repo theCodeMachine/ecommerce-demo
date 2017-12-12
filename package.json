@@ -13,7 +13,7 @@
     "dev": "node webpack/webpack-dev-server",
     "coverage": "yarn test -- --coverage",
     "lint": "eslint src",
-    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config"
   },
   "jest": {
     "transform": {
