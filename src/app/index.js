@@ -9,8 +9,6 @@ import '../styles/index.css'
 
 import Router from './router'
 
-
-
 // eslint-disable-next-line
 new Router();
 

@@ -11,6 +11,8 @@ import OrdersumPage from 'app/components/ordersum-page/OrdersumPage'
 
 import Model from './models/products'
 
+var product = new Model();
+
 export default Backbone.Router.extend({
     routes: {
         '': 'product',
@@ -19,7 +21,7 @@ export default Backbone.Router.extend({
         'summary':'osummary'
     },
     product() {
-        const productPage = new ProductPage({model:new Model()}).render()
+        const productPage = new ProductPage({model:product}).render()
         $("#root").empty().append(productPage.$el)
     },
     home() {
@@ -27,7 +29,7 @@ export default Backbone.Router.extend({
         $("#root").empty().append(homePage.$el)
     },
     shipping() {
-        const shippingPage = new ShippingPage().render()
+        const shippingPage = new ShippingPage({model: product}).render()
         $("#root").empty().append(shippingPage.$el)
     },
     osummary() {

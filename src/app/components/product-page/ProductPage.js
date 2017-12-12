@@ -39,12 +39,21 @@ export default Marionette.View.extend({
   },
 
   Navigate:function(e){
-    console.log(e);
+      Backbone.history.navigate('/ship',true);
+      return false;
   },
 
   ColorChange:function(e){
     if(e.target.id == "dcolor"){
       this.model.set("selectedColor",e.target.value);
+    }
+    
+      if(e.target.id == "dsize"){
+      this.model.set("selectedSize",e.target.value);
+    }
+      
+      if(e.target.id == "dqty"){
+      this.model.set("selectedQty",e.target.value);
     }
     
   }

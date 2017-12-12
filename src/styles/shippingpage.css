@@ -1,0 +1,70 @@
+:root {
+    --background-color: #3d3d3d;
+}
+
+.shippingpage {
+
+    &__header {
+        background-color: var(--background-color);
+        padding: 20px;
+
+        > img {
+            width: 200px;
+        }
+    }
+
+    &__intro {
+        font-size: large;
+    }
+    > hr {
+        border-width: medium;
+    }
+    
+    &__boxborder{
+        border: 2px solid red;
+        padding: 20px;
+    }
+    
+    button{
+        color:white;
+        background-color: red;
+        border: 0px;
+        width: 100px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    &__img-cont {
+        height: 175px;
+        width: 78%;
+        background-size: cover;
+    }
+
+    &__img-cont.green {
+        background-image: url('/static/green.jpeg');
+    }
+
+    &__img-cont.blue {
+        background-image: url('/static/blue.jpeg');
+    }
+
+    &__img-cont.black {
+        background-image: url('/static/black.jpeg');
+    }
+
+    &__img-cont.red {
+        background-image: url('/static/red.jpeg');
+    }
+    
+    input{
+        padding:10px;
+        margin: 15px 0px;
+        height: 20px;
+        width:90%;
+    }
+    
+    label{
+        font-weight: 800;
+        font-size: 18px;
+    }
+}
