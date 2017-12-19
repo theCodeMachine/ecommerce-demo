@@ -11,7 +11,8 @@ export default Backbone.Model.extend({
         selectedColor:'black',
         selectedSize: 'M',
         selectedQty:1,
-        itemCount:10
+        itemCount:10,
+        shipping:{}
     },
 
     initialize: function () {

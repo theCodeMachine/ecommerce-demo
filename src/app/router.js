@@ -33,7 +33,7 @@ export default Backbone.Router.extend({
         $("#root").empty().append(shippingPage.$el)
     },
     osummary() {
-        const osummaryPage = new OrdersumPage().render()
+        const osummaryPage = new OrdersumPage({model:product}).render()
         $("#root").empty().append(osummaryPage.$el)
     }
 })

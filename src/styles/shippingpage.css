@@ -63,8 +63,21 @@
         width:90%;
     }
     
+    input.invalid{
+        border:2px red solid;
+    }
+    
+    button:disabled{
+        background-color: grey;
+    }
+    
     label{
         font-weight: 800;
         font-size: 18px;
+    }
+    
+    h4{
+        margin: 0;
+        line-height: 3em;
     }
 }
